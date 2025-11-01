@@ -1,0 +1,1351 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Inter', sans-serif;
+}
+body,div,p,span,h1,h2,h3,h4,h5,h6,a,ul,li {
+  margin:0;
+  padding:0;
+
+}
+/* ===== Footer ===== */
+.footer {
+  background:#0a3d3f;
+  color:#fff;
+  padding:40px 20px;
+}
+.footer-container {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+  gap:30px;
+}
+.footer-logo {height:60px;margin-bottom:12px;}
+.footer-about p {font-size:14px;line-height:1.6;}
+.footer-links h3, .footer-contact h3 {margin-bottom:10px;}
+.footer-links ul {list-style:none;padding:0;margin:0;}
+.footer-links ul li {margin-bottom:6px;}
+.footer-links a {color:#fff;text-decoration:none;}
+.footer-links a:hover {text-decoration:underline;}
+.footer-socials a {color:#fff;margin-right:10px;font-size:16px;}
+.footer-contact p {font-size:14px;line-height:1.6;}
+.footer hr {margin:30px 0;border:0;border-top:1px solid rgba(255,255,255,0.1);}
+.footer-copy {text-align:center;font-size:13px;color:#ccc;}
+.brand {color:var(--brand);}
+/* ===== ADMISSIONS HERO ===== */
+.admissions-hero {
+  background: linear-gradient(to bottom right, #0d4a4a, #087f7f);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+.admissions-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.admissions-hero p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.btn-apply {
+  background: #000000;
+  color: #ffc400;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-apply:hover {
+  background: #ffd900;
+  color: #000000;
+}
+
+/* ===== ADMISSION PROCESS ===== */
+.admission-process {
+  padding: 80px 8%;
+  text-align: center;
+  background: #f9fafb;
+}
+.admission-process h2 {
+  font-size: 2rem;
+  color: #ffbb00;
+  margin-bottom: 0.5rem;
+}
+.admission-process p {
+  color: #000000;
+  margin-bottom: 2.5rem;
+}
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+.step {
+  background:#ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 15px rgba(48, 47, 47, 0.13);
+  transition: transform 0.3s ease;
+}
+.step:hover {
+  transform: translateY(-6px);
+}
+.step-number {
+  display: inline-block;
+  background: #ffe600;
+  color: #000000;
+  font-weight: 700;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* ===== REQUIREMENTS ===== */
+.requirements {
+  padding: 80px 8%;
+  background: #f8f8f6;
+  text-align: center;
+}
+.requirements h2 {
+  color: #ffe600;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.requirements ul {
+  list-style: none;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0;
+}
+.requirements li {
+  background:#bcd4d4;
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  color: #000000;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+/* ===== INQUIRY BOX ===== */
+.admission-inquiry {
+  background: #134747;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+.admission-inquiry h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.admission-inquiry p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+.admission-inquiry .btn-apply {
+  background: #ffd000;
+  color: #0d4a4a;
+}
+.admission-inquiry .btn-apply:hover {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admissions-hero h1 { font-size: 2rem; }
+  .admission-process, .requirements, .admission-inquiry {
+    padding: 60px 5%;
+  }
+}
+
+.admission-levels {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8fafc;
+}
+.admission-levels h2 {
+  font-size: 2rem;
+  color: #0d4a4a;
+  margin-bottom: 1rem;
+}
+.levels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+.level-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  font-weight: 600;
+  color: #333;
+}
+.admission-dates {
+  background: #0d4a4a;
+  color: #fff;
+  padding: 60px 20px;
+}
+.admission-dates h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.admission-dates ul {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
+.admission-dates li {
+  background: rgba(255,255,255,0.1);
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+}
+.fee-structure {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8fafc;
+}
+.fee-structure h2 {
+  color: #0d4a4a;
+}
+.fee-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+.fee-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  width: 240px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+.fee-card h4 {
+  color: #ffae00;
+  margin-bottom: 8px;
+}
+.admission-form {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+.admission-form h2 {
+  color: #0d4a4a;
+}
+.admission-form form {
+  max-width: 600px;
+  margin: 20px auto;
+  display: grid;
+  gap: 12px;
+}
+.admission-form input,
+.admission-form select,
+.admission-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.admission-form button {
+  background: #ffae00;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.admission-form button:hover {
+  background: #e69900;
+}
+.why-choose {
+  background: #0d4a4a;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+.why-card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+.admission-contact {
+  background: #f8fafc;
+  text-align: center;
+  padding: 60px 20px;
+  color: #0d4a4a;
+}
+.gallery {
+  text-align: center;
+  padding: 60px 20px;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+.gallery {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  color: #0d4a4a;
+  margin-bottom: 1.5rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+/* Equal size images */
+.gallery-grid img {
+  width: 100%;
+  height: 220px; /* fixed equal height */
+  object-fit: cover; /* ensures image crops neatly without distortion */
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+.admission-levels {
+  text-align: center;
+  padding: 80px 8%;
+  background: #f9fafb;
+}
+
+.admission-levels h2 {
+  font-size: 2.2rem;
+  color: #0d4a4a;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.levels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Stylish cards */
+.level-card {
+  position: relative;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.level-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Overlay for text */
+.level-card .overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.2rem;
+  color: #fff;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  text-align: left;
+}
+
+.level-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.level-card p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admission-levels {
+    padding: 60px 5%;
+  }
+  .level-card {
+    height: 200px;
+  }
+}
+/* Fade-in animation effect */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.level-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.admission-levels {
+  text-align: center;
+  padding: 80px 8%;
+  background: #f9fafb;
+}
+
+.admission-levels h2 {
+  font-size: 2.2rem;
+  color: #0d4a4a;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.levels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Stylish Cards */
+.level-card {
+  position: relative;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Hover effect (zoom + glow) */
+.level-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+}
+
+.level-card:hover::before {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.level-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Zoom on hover */
+.level-card:hover {
+  background-size: 110%;
+}
+
+/* Text Overlay */
+.level-card .overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.2rem;
+  color: #fff;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  text-align: left;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.level-card:hover .overlay {
+  transform: translateY(-5px);
+  opacity: 1;
+}
+
+.level-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.level-card p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Fade animation when scrolling */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admission-levels {
+    padding: 60px 5%;
+  }
+  .level-card {
+    height: 200px;
+  }
+}
+.fee-structure {
+  text-align: center;
+  padding: 80px 8%;
+  background: linear-gradient(180deg, #f9fafb 0%, #eef2f7 100%);
+}
+
+.fee-structure h2 {
+  font-size: 2.2rem;
+  color: #0d4a4a;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.fee-structure p {
+  color: #475569;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.fee-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Fee Card Style */
+.fee-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 2rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  border-top: 4px solid transparent;
+}
+
+.fee-card:hover {
+  transform: translateY(-8px);
+  border-top: 4px solid #0d4a4a;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Style */
+.fee-card .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0d4a4a;
+  transition: transform 0.3s ease;
+}
+
+.fee-card:hover .icon {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.fee-card h4 {
+  font-size: 1.3rem;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.fee-card p {
+  font-size: 1rem;
+  color: #475569;
+}
+
+.fee-card span {
+  font-weight: 700;
+  color: #0d4a4a;
+}
+
+/* Button */
+.btn-fee {
+  margin-top: 1rem;
+  background: #0d4a4a;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-fee:hover {
+  background: #128080;
+  transform: scale(1.05);
+}
+
+/* Animation on scroll */
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fee-card {
+  opacity: 0;
+}
+
+.fee-card.visible {
+  animation: fadeInCard 0.8s ease forwards;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fee-structure {
+    padding: 60px 5%;
+  }
+}
+.fee-structure {
+  text-align: center;
+  padding: 60px 5%;
+  background: linear-gradient(135deg, #f9fafb, #f1f5f9);
+}
+
+.fee-structure h2 {
+  font-size: 2rem;
+  color: #0d4a4a;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.fee-structure p {
+  color: #475569;
+  font-size: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.fee-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Sleek, compact cards */
+.fee-card {
+  background: white;
+  width: 250px;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+}
+
+.fee-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-color: #0d4a4a;
+}
+
+/* Circular icon */
+.fee-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 0.8rem;
+  background: #0d4a4a;
+  color: white;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.fee-card:hover .fee-icon {
+  background: #128080;
+  transform: scale(1.1);
+}
+
+.fee-card h4 {
+  font-size: 1.1rem;
+  color: #1e293b;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.fee-card p {
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.fee-card span {
+  color: #0d4a4a;
+  font-weight: 700;
+}
+
+.admissions-hero {
+  position: relative;
+  height: 500px; /* fixed height */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background: #000;
+}
+
+/* ===== Carousel ===== */
+.carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.slides {
+  display: flex;
+  width: 300%; /* ✅ Total width = 100% × 3 images */
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+}
+
+.slides img {
+  width: 100%; /* ✅ Each image full width */
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== Hero Content ===== */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem 2rem;
+  border-radius: 0.75rem;
+  max-width: 600px;
+}
+
+.btn-apply {
+  display: inline-block;
+  background: #fcb900;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: 0.3s;
+}
+
+.btn-apply:hover {
+  background: #ffcf3f;
+}
+
+/* ===== Controls ===== */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #0d4a4a;
+  color: #ffffff;
+  padding: 60px 10% 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.footer-about p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.footer-socials a {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #fcb900;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  color: #fcb900;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fcb900;
+}
+
+.footer-contact p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.footer hr {
+  margin: 40px 0 20px;
+  border: 0;
+  height: 1px;
+  background-color: #ffffff33;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+
+.footer-copy .brand {
+  color: #fcb900;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 50px 6% 20px;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer-socials {
+    justify-content: center;
+  }
+}
+
+
+
+.back-top {
+  background: var(--accent);
+  border: none;
+  color: var(--white);
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+   
+}
+
+.back-top:hover {
+  background: #e0a800;
+  justify-content: space-evenly;
+  transform: translateY(-2px);
+}
+
+ :root {
+      --primary: #002147;
+      --accent: #f9b234;
+      --bg: #f4f7fc;
+      --white: #ffffff;
+      --shadow: rgba(0,0,0,0.1);
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f4f7fc, #e9effd);
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+
+
+       :root {
+      --primary: #002147;
+      --accent: #f9b234;
+      --bg: #eef3fc;
+      --white: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
+      margin: 0;
+      padding: 60px 0;
+      color: #222;
+    }
+
+    /* Container */
+.form-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #f8f9fa;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  font-family: "Poppins", sans-serif;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #244;
+  margin-bottom: 25px;
+  font-weight: 600;
+  border-bottom: 3px solid #f4b400;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Two equal columns */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Full width elements */
+.full-width,
+textarea,
+button {
+  grid-column: span 2;
+}
+
+/* Input and select styling */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #1f3a3f;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #ffbb00;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Label styling */
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #000000;
+}
+
+/* File inputs (consistent look) */
+input[type="file"] {
+  padding: 6px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Agreement section - text left, checkbox right */
+.agreement {
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+.agreement p {
+  margin: 0;
+  font-size: 14px;
+  color: #000000;
+  flex: 1;
+}
+
+.agreement input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Submit button */
+button {
+  background-color: #ffbb00;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ffd900;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  .agreement {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+
+
+/* Style file inputs with yellow choose button */
+input[type="file"] {
+  position: relative;
+  padding: 10px;
+  font-size: 15px;
+  color: #000000;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Hide the default ugly input button */
+input[type="file"]::-webkit-file-upload-button {
+  background-color: #f4b400; /* yellow theme color */
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* Hover and focus effect */
+input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #ffbf00;
+}
+
+input[type="file"]::-webkit-file-upload-button:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgb(255, 187, 0);
+}
+
+/* For Firefox */
+input[type="file"]::file-selector-button {
+  background-color: #f4b400;
+  color: #000000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #ffbf00;
+}
+
+input[type="file"]::file-selector-button:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgb(253, 228, 0);
+}
+
+
+
+
+
+:root {--brand:#ffae00;--dark:#0d4a4a;--muted: #0d4a4a;}
+
+body {font-family: 'Inter', sans-serif; margin:0; color:#0f172a;padding: 0;}
+
+/* ===== Topbar ===== */
+.topbar {
+  background:#0d4a4a;
+  color:#fff;
+  padding:6px 16px;
+  padding:6px 16px;
+  margin: 0;
+
+
+  font-size:14px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.topbar .left, .topbar .right {display:flex;gap:12px;align-items:center;}
+.topbar a {color:inherit;text-decoration:none;}
+.social a {color:#ffffff;}
+
+/* ===== Navbar ===== */
+.navbar {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 20px;
+  background:#fff;
+  border-bottom:1px solid #eee;
+}
+.logo {display:flex;align-items:center;gap:12px;}
+.logo img {height:48px;}
+.nav-links {display:flex;gap:18px;align-items:center;}
+.nav-links a {
+  color:#0d4a4a;
+  text-decoration:none;
+  font-weight:600;
+}
+.cta-btn {
+  background:var(--brand);
+  color:#fff;
+  padding:8px 14px;
+  border-radius:8px;
+  text-decoration:none;
+}
+
+/* ===== Mobile Menu ===== */
+.burger {
+  display:none;
+  border:0;
+  background:transparent;
+  font-size:20px;
+}
+@media (max-width:900px){
+  .nav-links {
+    display:none;
+    position:absolute;
+    top:78px;
+    left:0;
+    right:0;
+    background:#fff;
+    flex-direction:column;
+    padding:16px;
+    border-top:1px solid #eee;
+  }
+  .burger {display:block;}
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Apply Now button style */
+.nav-links .cta-btn {
+  background-color: #ffbb00;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links .cta-btn:hover {
+  background-color: #ffc400;
+  transform: scale(1.05);
+}
+
+.nav-links a:not(.cta-btn).active::after {
+  width: 100%;
+}
+
+
+
+
+
+/* Simple Navbar Styling */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0d4a4a;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+  background: rgba(13, 74, 74, 0.1);
+}
+
+/* Active link */
+.nav-links a.active {
+  background: #0d4a4a;
+  color: #fff;
+}
+
+/* Apply Now button */
+.nav-links a.cta-btn {
+  background: #ffc400;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.nav-links a.cta-btn:hover {
+  background: #ffae00;
+}
+
+/* Burger menu (optional mobile view) */
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #0d4a4a;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  font-size: 28px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.1);
+}

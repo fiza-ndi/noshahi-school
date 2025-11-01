@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noshahi Global Learning Hub — Home</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style6.css">
+
+
+  <style>
+    :root{--brand:#ffae00;--dark:#ffffff;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;color:#ffffff;margin:0}
+
+    /* Top contact bar */
+    .topbar{background:#0d4a4a;color:#fff;padding:6px 16px;font-size:14px;display:flex;justify-content:space-between;align-items:center}
+    .topbar .left, .topbar .right{display:flex;gap:12px;align-items:center}
+    .topbar a{color:inherit;text-decoration:none}
+
+    /* Navbar */
+    .navbar{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:#fff;border-bottom:1px solid #eee}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo img{height:48px}
+    .nav-links{display:flex;gap:18px;align-items:center}
+    .nav-links a{color:#0d4a4a;text-decoration:none;font-weight:600}
+    .cta-btn{background:var(--brand);color:#000000;padding:8px 14px;border-radius:8px;text-decoration:none}
+
+    /* Social icons */
+    .social{display:flex;gap:8px}
+    .social a{color:var(--dark);text-decoration:none}
+
+    /* Mobile */
+    .burger{display:none;border:0;background:transparent;font-size:20px}
+    @media (max-width:900px){
+      .nav-links{display:none;position:absolute;top:78px;left:0;right:0;background:#fff;flex-direction:column;padding:16px;border-top:1px solid #eee}
+      .burger{display:block}
+      .logo img{height:40px}
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="left"><span><i class="fa-solid fa-phone"></i> 03 111 444 412</span><a href="mailto:info@noshahi.edu.pk"><i class="fa-solid fa-envelope"></i> info@noshahi.edu.pk</a></div>
+    <div class="right social"><a href="#" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="linkedin"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" aria-label="youtube"><i class="fa-brands fa-youtube"></i></a></div>
+  </div>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi School System">
+      <div>
+        <div style="font-weight:700; color:#0d4a4a;">Noshahi School System</div>
+        <div style="font-size:12px; color:#555;">Inspiring global minds</div>
+
+      </div>
+    </div>
+
+    <nav>
+      <button class="burger" id="burger" aria-label="menu"><i class="fa-solid fa-bars"></i></button>
+      <div class="nav-links" id="navLinks">
+         <a href="index.html">Home</a>
+        <a href="why noshahi.html">Why-NSS</a>
+        <a href="campus.html">Campuses</a>
+        <a href="admission.html">Admissions</a>
+        <a href="journy.html">Our Journey</a>
+        <a href="faculty.html"class="active">Faculty</a>
+        <a href="contact.html">Contact Us</a>
+         <a class="cta-btn" href="admission.html">Apply Now</a>
+      </div>
+    </nav>
+  </header>
+
+ <section>
+    <!-- Leadership Team -->
+    <div class="faculty-category">
+      <h2>Leadership Team</h2>
+      <div class="faculty-grid">
+
+        <div class="faculty-card">
+          <img src="teacher.jpg" alt="Principal">
+          <div class="faculty-info">
+            <h3>Mrs. Ayesha Noshahi</h3>
+            <p>Principal</p>
+            <p class="quote">“Education is not preparation for life; education is life itself.”</p>
+          </div>
+        </div>
+
+        <div class="faculty-card">
+          <img src="teacher 1.jpg" alt="Vice Principal">
+          <div class="faculty-info">
+            <h3>Mr. Ahmed Khan</h3>
+            <p>Vice Principal</p>
+            <p class="quote">“Inspiring young minds to dream big and achieve more.”</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Primary Faculty -->
+    <div class="faculty-category">
+      <h2>Primary Faculty</h2>
+      <div class="faculty-grid">
+
+        <div class="faculty-card">
+          <img src="teacher 2.jpg" alt="English Teacher">
+          <div class="faculty-info">
+            <h3>Ms. Fatima Ali</h3>
+            <p>English Teacher</p>
+            <p class="quote">“Reading is the gateway to imagination.”</p>
+          </div>
+        </div>
+
+        <div class="faculty-card">
+          <img src="teacher 6.jpg" alt="Science Teacher">
+          <div class="faculty-info">
+            <h3>Mr. Salman Raza</h3>
+            <p>Science Teacher</p>
+            <p class="quote">“Learning by doing leads to lifelong understanding.”</p>
+          </div>
+        </div>
+
+        <div class="faculty-card">
+          <img src="teacher 3.jpg" alt="Math Teacher">
+          <div class="faculty-info">
+            <h3>Ms. Sana Malik</h3>
+            <p>Mathematics Teacher</p>
+            <p class="quote">“Numbers speak the language of logic and creativity.”</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Secondary Faculty -->
+    <div class="faculty-category">
+      <h2>Secondary Faculty</h2>
+      <div class="faculty-grid">
+
+        <div class="faculty-card">
+          <img src="teacher 5.jpg" alt="Physics Teacher">
+          <div class="faculty-info">
+            <h3>Mr. Imran Shah</h3>
+            <p>Physics Teacher</p>
+            <p class="quote">“Where curiosity meets discovery.”</p>
+          </div>
+        </div>
+
+        <div class="faculty-card">
+          <img src="teacher 4.jpg" alt="Computer Teacher">
+          <div class="faculty-info">
+            <h3>Ms. Hira Javed</h3>
+            <p>Computer Science Teacher</p>
+            <p class="quote">“Coding the future, one student at a time.”</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="faculty-video">
+  <h2>Meet Our Educators in Action</h2>
+  <video controls poster="images/video-thumbnail.jpg" width="100%">
+    <source src="Urs Video Ad 2025.mp4" type="video/mp4">
+  </video>
+</section>
+
+  <!-- FACULTY ACHIEVEMENTS -->
+  <section class="faculty-achievements" data-animate>
+    <h2>Faculty Achievements</h2>
+    <ul>
+      <li>🏅 Best Educator Award 2024 — Mrs. Sara Malik (Science Dept.)</li>
+      <li>🏆 Outstanding Teaching Award — Mr. Ali Raza (Mathematics Dept.)</li>
+    </ul>
+  </section>
+
+  <!-- JOIN FACULTY -->
+  <section class="join-faculty" data-animate>
+    <h2>Join Our Faculty</h2>
+    <p>We’re always looking for passionate educators. Send your resume to
+    <a href="mailto:careers@noshahischool.edu.pk">careers@noshahischool.edu.pk</a></p>
+  </section>
+
+<br>
+
+<br>
+
+  <!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Left Column -->
+    <div class="footer-about">
+      <img src="logo.png" alt="Noshahi Global Learning Hub Logo" class="footer-logo">
+      <p>
+        Noshahi Global Learning Hub is committed to academic excellence, strong values, 
+        and holistic development — nurturing future-ready, confident learners in a 
+        progressive environment.
+      </p>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Middle Column (Quick Links) -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why noshahi.html">Why Noshahi</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#contact">Enroll Now</a></li>
+      </ul>
+    </div>
+
+    <!-- Useful Links -->
+    <div class="footer-links">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="#life">Life at Noshahi</a></li>
+        <li><a href="#campuses">Campuses</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <hr>
+  <p class="footer-copy">Copyright © 2025 
+    <span class="brand">Noshahi Global Learning Hub</span>. All Rights Reserved.
+     <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="back-top">↑ Top</button>
+  </p>
+
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const track = document.querySelector(".card-track");
+      const clone = track.innerHTML;
+      track.innerHTML += clone; // duplicate cards for smooth loop
+    });
+  </script>
+    <script>
+    // Mobile menu toggle
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+    burger.addEventListener('click', ()=>{
+      navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    // Simple carousel
+    const slides = document.getElementById('slides');
+    const dots = document.getElementById('dots');
+    const total = slides.children.length;
+    let index = 0;
+
+    function goTo(i){
+      index = (i + total) % total;
+      slides.style.transform = `translateX(${-index * 100}%)`;
+      Array.from(dots.children).forEach((d,idx)=> d.classList.toggle('active', idx===index));
+    }
+
+    // create dots
+    for(let i=0;i<total;i++){const d=document.createElement('div');d.className='dot';d.addEventListener('click',()=>goTo(i));dots.appendChild(d)}
+    goTo(0);
+
+    document.getElementById('prev').addEventListener('click',()=>goTo(index-1));
+    document.getElementById('next').addEventListener('click',()=>goTo(index+1));
+
+    // autoplay
+    setInterval(()=>goTo(index+1),7000);
+    document.querySelectorAll("#values .guide-card").forEach(card => {
+  card.addEventListener("mouseenter", () => card.classList.add("active"));
+  card.addEventListener("mouseleave", () => card.classList.remove("active"));
+});
+
+      </script>
+        <!-- ✅ WhatsApp Floating Button -->
+<a href="https://wa.me/923001234567" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
