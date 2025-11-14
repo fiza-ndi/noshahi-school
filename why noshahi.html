@@ -3,71 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Noshahi School System — Home</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="main.css">
 
-  <style>
-    :root{--brand:#ffae00;--dark:#ffffff;--muted:#6b7280}
-    *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;color:#ffffff;margin:0}
-
-    /* Top contact bar */
-    .topbar{background:#0d4a4a;color:#fff;padding:6px 16px;font-size:14px;display:flex;justify-content:space-between;align-items:center}
-    .topbar .left, .topbar .right{display:flex;gap:12px;align-items:center}
-    .topbar a{color:inherit;text-decoration:none}
-
-    /* Navbar */
-    .navbar{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:#fff;border-bottom:1px solid #eee}
-    .logo{display:flex;align-items:center;gap:12px}
-    .logo img{height:48px}
-    .nav-links{display:flex;gap:18px;align-items:center}
-    .nav-links a{color:#0d4a4a;text-decoration:none;font-weight:600}
-    .cta-btn{background:var(--brand);color:#fff;padding:8px 14px;border-radius:8px;text-decoration:none}
-
-    /* Social icons */
-    .social{display:flex;gap:8px}
-    .social a{color:var(--dark);text-decoration:none}
-
-    /* Mobile */
-    .burger{display:none;border:0;background:transparent;font-size:20px}
-    @media (max-width:900px){
-      .nav-links{display:none;position:absolute;top:78px;left:0;right:0;background:#fff;flex-direction:column;padding:16px;border-top:1px solid #eee}
-      .burger{display:block}
-      .logo img{height:40px}
-    }
-
-    /* Hero carousel full width */
-    .hero{position:relative;overflow:hidden}
-    .slides{display:flex;transition:transform 0.6s ease}
-    .slide{min-width:100%;height:60vh;display:flex;align-items:center;justify-content:center;color:#fff;position:relative;background-size:cover;background-position:center}
-    .slide .overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(6,10,23,0.25), rgba(6,10,23,0.6));}
-    .slide .copy{position:relative;z-index:2;max-width:1100px;padding:24px}
-    .slide h1{font-size:clamp(24px,4vw,48px);margin:0 0 10px}
-    .slide p{font-size:clamp(14px,1.8vw,18px);margin:0 0 16px;color:#eef}
-    .hero-controls{position:absolute;left:16px;right:16px;bottom:18px;display:flex;justify-content:space-between;z-index:5}
-    .dots{display:flex;gap:8px}
-    .dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.5);cursor:pointer}
-    .dot.active{background:#fff}
-    .hero-nav{display:flex;gap:8px}
-    .hero-btn{background:rgba(0,0,0,0.35);border:0;color:#fff;padding:8px 12px;border-radius:8px}
-
-    /* Sections */
-    .container{max-width:1200px;margin:0 auto;padding:40px 20px}
-    .grid{display:grid;gap:20px}
-    .grid-3{grid-template-columns:repeat(3,1fr)}
-    .program-card{border:1px solid #eeeeee;padding:20px;border-radius:12px}
-
-
-
-
-    /* Footer */
-    footer{background:#0a3d3f;color:#fff;padding:32px 20px}
-    footer a{color:inherit}
-
-  </style>
+  <!-- All styles moved to main.css -->
 </head>
 <body>
 
@@ -78,10 +22,10 @@
 
   <header class="navbar">
     <div class="logo">
-      <img src="noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi School System">
+      <img src="image/noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi School System">
       <div>
-        <div style="font-weight:700; color:#0d4a4a;">Noshahi School System</div>
-        <div style="font-size:12px; color:#555;">Inspiring global minds</div>
+        <div class="logo-title">Noshahi School System</div>
+        <div class="logo-subtitle">Inspiring global minds</div>
       </div>
     </div>
 
@@ -89,13 +33,13 @@
       <button class="burger" id="burger" aria-label="menu"><i class="fa-solid fa-bars"></i></button>
       <div class="nav-links" id="navLinks">
          <a href="index.html">Home</a>
-        <a href="why noshahi.html"class="active">Why-NSS</a>
+        <a href="why noshahi.html" class="active">Why-noshahi</a>
         <a href="campus.html">Campuses</a>
         <a href="admission.html">Admissions</a>
         <a href="journy.html">Our Journey</a>
         <a href="faculty.html">Faculty</a>
         <a href="contact.html">Contact Us</a>
-         <a class="cta-btn" href="admission.html">Apply Now</a>
+        <a class="cta-btn" href="admission.html">Apply Now</a>
       </div>
     </nav>
   </header>
@@ -191,6 +135,8 @@
 <section class="cta">
   <h3>Join the <span>Noshahi Family</span> Today!</h3>
   <p>Admissions are now open — where learning meets excellence.</p>
+  <br>
+
   <a href="admission.html" class="btn-apply">Apply Now</a>
 </section>
 <br>
@@ -224,9 +170,9 @@
     
     <!-- Left Column -->
     <div class="footer-about">
-      <img src="noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi Global Learning Hub Logo" class="footer-logo">
+      <img src="image/noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi Global Learning Hub Logo" class="footer-logo">
       <p>
-        Noshahi Global Learning Hub is committed to academic excellence, strong values, 
+        Noshahi School System is committed to academic excellence, strong values, 
         and holistic development — nurturing future-ready, confident learners in a 
         progressive environment.
       </p>
@@ -244,15 +190,14 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="why noshahi.html">Why Noshahi</a></li>
-        <li><a href="#programs">Programs</a></li>
-        <li><a href="#admissions">Admissions</a></li>
-        <li><a href="#contact">Enroll Now</a></li>
+        <li><a href="faculty.html">Programs</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="contact.html">Enroll Now</a></li>
       </ul>
     </div>
 
     <!-- Useful Links -->
     <div class="footer-links">
-    
       <h3>Useful Links</h3>
       <ul>
         <li><a href="index.html">Life at Noshahi</a></li>
@@ -266,95 +211,159 @@
 
   <hr>
   <p class="footer-copy">Copyright © 2025 
-    <span class="brand">Noshahi Global Learning Hub</span>. All Rights Reserved.
+    <span class="brand">Noshahi School System</span>. All Rights Reserved.
+    <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="back-top">↑ Top</button>
   </p>
 </footer>
 
-<script>
-  // ===================== MOBILE MENU TOGGLE =====================
-  const burger = document.getElementById('burger');
-  const navMenu = document.getElementById('navLinks'); // renamed to navMenu to avoid conflict
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const track = document.querySelector(".card-track");
+      const clone = track.innerHTML;
+      track.innerHTML += clone; // duplicate cards for smooth loop
+    });
+  </script>
+    <script>
+    // Mobile menu toggle
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+    burger.addEventListener('click', ()=>{
+      navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    });
 
-  burger.addEventListener('click', () => {
-    navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
-  });
+    // Simple carousel
+    const slides = document.getElementById('slides');
+    const dots = document.getElementById('dots');
+    const total = slides.children.length;
+    let index = 0;
 
+    function goTo(i){
+      index = (i + total) % total;
+      slides.style.transform = `translateX(${-index * 100}%)`;
+      Array.from(dots.children).forEach((d,idx)=> d.classList.toggle('active', idx===index));
+    }
 
-  // ===================== SIMPLE CAROUSEL =====================
-  const slides = document.getElementById('slides');
-  const dots = document.getElementById('dots');
-  const total = slides.children.length;
-  let index = 0;
+    // create dots
+    for(let i=0;i<total;i++){const d=document.createElement('div');d.className='dot';d.addEventListener('click',()=>goTo(i));dots.appendChild(d)}
+    goTo(0);
 
-  function goTo(i) {
-    index = (i + total) % total;
-    slides.style.transform = `translateX(${-index * 100}%)`;
-    Array.from(dots.children).forEach((d, idx) => d.classList.toggle('active', idx === index));
-  }
+    document.getElementById('prev').addEventListener('click',()=>goTo(index-1));
+    document.getElementById('next').addEventListener('click',()=>goTo(index+1));
 
-  // create dots
-  for (let i = 0; i < total; i++) {
-    const d = document.createElement('div');
-    d.className = 'dot';
-    d.addEventListener('click', () => goTo(i));
-    dots.appendChild(d);
-  }
-  goTo(0);
+    // autoplay
+    setInterval(()=>goTo(index+1),7000);
 
-  document.getElementById('prev').addEventListener('click', () => goTo(index - 1));
-  document.getElementById('next').addEventListener('click', () => goTo(index + 1));
+       // ===== ACE PROMISE SECTION EFFECTS ===== //
 
-  // autoplay
-  setInterval(() => goTo(index + 1), 7000);
+// simple fade-in animation when cards appear in viewport
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll("#ace .card");
 
-
-  // ===================== ACE PROMISE SECTION EFFECTS =====================
-  document.addEventListener("DOMContentLoaded", () => {
-    const aceCards = document.querySelectorAll("#ace .card");
-    const observer = new IntersectionObserver((entries) => {
+  const observer = new IntersectionObserver(
+    (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
         }
       });
-    }, { threshold: 0.3 });
-    aceCards.forEach((card) => observer.observe(card));
-  });
+    }, // <-- yahan comma hona chahiye tha!
+    { threshold: 0.3 }
+  );
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const whyCards = document.querySelectorAll("#why .card");
-    const observer = new IntersectionObserver((entries) => {
+  cards.forEach((card) => {
+    observer.observe(card);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll("#why .card");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) entry.target.classList.add("visible");
       });
-    }, { threshold: 0.3 });
-    whyCards.forEach((card) => observer.observe(card));
+    },
+    { threshold: 0.3 }
+  );
+
+  cards.forEach((card) => observer.observe(card));
+});
+
+document.querySelectorAll("#values .card").forEach(card => {
+  card.addEventListener("mouseenter", () => {
+    card.classList.add("active");
   });
+  card.addEventListener("mouseleave", () => {
+    card.classList.remove("active");
+  });
+});
 
-  document.querySelectorAll("#values .card").forEach(card => {
-    card.addEventListener("mouseenter", () => {
-      card.classList.add("active");
+document.querySelectorAll("#values .card").forEach(card => {
+  card.addEventListener("mouseenter", () => {
+    card.classList.add("active");
+  });
+  card.addEventListener("mouseleave", () => {
+    card.classList.remove("active");
+  });
+});
+</script>
+  </script>
+  <script>
+  const track = document.querySelector('.card-track');
+  let scrollAmount = 0;
+
+  function autoScroll() {
+    const cardWidth = document.querySelector('.info-card').offsetWidth + 20; // card width + gap
+    scrollAmount += cardWidth;
+
+    if (scrollAmount >= track.scrollWidth - track.clientWidth) {
+      scrollAmount = 0;
+    }
+
+    track.scrollTo({
+      left: scrollAmount,
+      behavior: 'smooth'
     });
-    card.addEventListener("mouseleave", () => {
-      card.classList.remove("active");
+  }
+
+  setInterval(autoScroll, 3000); // Auto-slide every 3 seconds
+  setInterval(autoScroll, 3000);
+</script>
+<script>
+window.onload = function() {
+  // Testimonials auto switch
+  const testimonials = document.querySelectorAll('.testimonial');
+  let index = 0;
+  setInterval(() => {
+    testimonials[index].classList.remove('active');
+    index = (index + 1) % testimonials.length;
+    testimonials[index].classList.add('active');
+  }, 3500);
+};
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+
+    // Toggle menu open/close on burger click
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu automatically when a nav link is clicked (on mobile)
+    document.querySelectorAll('#navLinks a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
     });
   });
-
-
-  // ===================== FOOTER YEAR =====================
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-
-
 </script>
 
 
-<!-- ✅ WhatsApp Floating Button -->
-<a href="https://wa.me/923001234567" 
-   class="whatsapp-float" 
-   target="_blank" 
-   aria-label="Chat on WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
+
+
 </body>
 </html>

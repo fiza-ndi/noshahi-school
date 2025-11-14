@@ -3,46 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Noshahi School System — Home</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="main.css">
 
-  <style>
-    :root{--brand:#ffae00;--dark:#ffffff;--muted:#6b7280}
-    *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;color:#ffffff;margin:0}
-
-    /* Top contact bar */
-    .topbar{background:#0d4a4a;color:#fff;padding:6px 16px;font-size:14px;display:flex;justify-content:space-between;align-items:center}
-    .topbar .left, .topbar .right{display:flex;gap:12px;align-items:center}
-    .topbar a{color:inherit;text-decoration:none}
-
-    /* Navbar */
-    .navbar{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:#fff;border-bottom:1px solid #eee}
-    .logo{display:flex;align-items:center;gap:12px}
-    .logo img{height:48px}
-    .nav-links{display:flex;gap:18px;align-items:center}
-    .nav-links a{color:#0d4a4a;text-decoration:none;font-weight:600}
-    .cta-btn{background:var(--brand);color:#fff;padding:8px 14px;border-radius:8px;text-decoration:none}
-
-    /* Social icons */
-    .social{display:flex;gap:8px}
-    .social a{color:var(--dark);text-decoration:none}
-
-    /* Mobile */
-    .burger{display:none;border:0;background:transparent;font-size:20px}
-    @media (max-width:900px){
-      .nav-links{display:none;position:absolute;top:78px;left:0;right:0;background:#fff;flex-direction:column;padding:16px;border-top:1px solid #eee}
-      .burger{display:block}
-      .logo img{height:40px}
-    }
-        /* Footer */
-    footer{background:#0a3d3f;color:#fff;padding:32px 20px}
-    footer a{color:inherit}
-
-  </style>
 </head>
 <body>
     <!-- ====== HEADER SECTION ====== -->
@@ -56,10 +24,10 @@
 
 <header class="navbar">
   <div class="logo">
-    <img src="noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi School System">
+    <img src="image/noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi School System">
     <div>
-      <div style="font-weight:700; color:#0d4a4a;">Noshahi School System</div>
-        <div style="font-size:12px; color:#555;">Inspiring global minds</div>
+      <div class="logo-title">Noshahi School System</div>
+      <div class="logo-subtitle">Inspiring global minds</div>
     </div>
   </div>
 
@@ -67,13 +35,13 @@
     <button class="burger" id="burger" aria-label="menu"><i class="fa-solid fa-bars"></i></button>
     <div class="nav-links" id="navLinks">
        <a href="index.html">Home</a>
-        <a href="why noshahi.html">Why-NSS</a>
+        <a href="why noshahi.html">Why-noshahi</a>
         <a href="campus.html" class="active">Campuses</a>
         <a href="admission.html">Admissions</a>
         <a href="journy.html">Our Journey</a>
         <a href="faculty.html">Faculty</a>
         <a href="contact.html">Contact Us</a>
-         <a class="cta-btn" href="admission.html">Apply Now</a>
+        <a class="cta-btn" href="admission.html">Apply Now</a>
     </div>
   </nav>
 </header>
@@ -94,7 +62,7 @@
 
   <!-- Campus 1 (Image Left) -->
   <div class="campus-card reverse">
-    <div class="campus-img" style="background-image: url('campuses 2.jpg');"></div>
+    <div class="campus-img" style="background-image: url('image/campuses.jpg');"></div>
     <div class="campus-content">
       <h2>Bahria Town Campus</h2>
       <p>Canal Bank Road, Opposite Bahria Town, Lahore.</p>
@@ -107,7 +75,7 @@
 
   <!-- Campus 2 (Image Right) -->
   <div class="campus-card">
-    <div class="campus-img" style="background-image: url('campuses.jpg');"></div>
+    <div class="campus-img" style="background-image: url('image/campuses\ 2.jpg');"></div>
     <div class="campus-content">
       <h2>Central Park Campus</h2>
       <p>0.5 KM Sue-e-Asal Road, off Ferozepur Road, Lahore.</p>
@@ -128,9 +96,9 @@
     
     <!-- Left Column -->
     <div class="footer-about">
-      <img src="logo.png" alt="Noshahi Global Learning Hub Logo" class="footer-logo">
+      <img src="image/noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi Global Learning Hub Logo" class="footer-logo">
       <p>
-        Noshahi Global Learning Hub is committed to academic excellence, strong values, 
+        Noshahi School System is committed to academic excellence, strong values, 
         and holistic development — nurturing future-ready, confident learners in a 
         progressive environment.
       </p>
@@ -148,9 +116,9 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="why noshahi.html">Why Noshahi</a></li>
-        <li><a href="#programs">Programs</a></li>
-        <li><a href="#admissions">Admissions</a></li>
-        <li><a href="#contact">Enroll Now</a></li>
+        <li><a href="faculty.html">Programs</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="contact.html">Enroll Now</a></li>
       </ul>
     </div>
 
@@ -175,91 +143,49 @@
 </footer>
 
 
+
 <script>
-  // ===================== MOBILE MENU TOGGLE =====================
+  // ===== Mobile menu toggle =====
   const burger = document.getElementById('burger');
-  const navMenu = document.getElementById('navLinks'); // renamed to navMenu to avoid conflict
-
+  const navLinks = document.getElementById('navLinks');
   burger.addEventListener('click', () => {
-    navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
   });
 
-
-  // ===================== SIMPLE CAROUSEL =====================
-  const slides = document.getElementById('slides');
-  const dots = document.getElementById('dots');
-  const total = slides.children.length;
-  let index = 0;
-
-  function goTo(i) {
-    index = (i + total) % total;
-    slides.style.transform = `translateX(${-index * 100}%)`;
-    Array.from(dots.children).forEach((d, idx) => d.classList.toggle('active', idx === index));
-  }
-
-  // create dots
-  for (let i = 0; i < total; i++) {
-    const d = document.createElement('div');
-    d.className = 'dot';
-    d.addEventListener('click', () => goTo(i));
-    dots.appendChild(d);
-  }
-  goTo(0);
-
-  document.getElementById('prev').addEventListener('click', () => goTo(index - 1));
-  document.getElementById('next').addEventListener('click', () => goTo(index + 1));
-
-  // autoplay
-  setInterval(() => goTo(index + 1), 7000);
-
-
-  // ===================== ACE PROMISE SECTION EFFECTS =====================
+  // ===== Footer year auto update =====
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script>
+  // Smooth fade-in for campus cards
   document.addEventListener("DOMContentLoaded", () => {
-    const aceCards = document.querySelectorAll("#ace .card");
+    const cards = document.querySelectorAll(".campus-card");
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    }, { threshold: 0.3 });
-    aceCards.forEach((card) => observer.observe(card));
-  });
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const whyCards = document.querySelectorAll("#why .card");
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
+      entries.forEach(entry => {
         if (entry.isIntersecting) entry.target.classList.add("visible");
       });
-    }, { threshold: 0.3 });
-    whyCards.forEach((card) => observer.observe(card));
+    }, { threshold: 0.2 });
+    cards.forEach(card => observer.observe(card));
   });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
 
-  document.querySelectorAll("#values .card").forEach(card => {
-    card.addEventListener("mouseenter", () => {
-      card.classList.add("active");
+    // Toggle menu open/close on burger click
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
     });
-    card.addEventListener("mouseleave", () => {
-      card.classList.remove("active");
+
+    // Close menu automatically when a nav link is clicked (on mobile)
+    document.querySelectorAll('#navLinks a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
     });
   });
-
-
-  // ===================== FOOTER YEAR =====================
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-
-
 </script>
 
 
-<!-- ✅ WhatsApp Floating Button -->
-<a href="https://wa.me/923001234567" 
-   class="whatsapp-float" 
-   target="_blank" 
-   aria-label="Chat on WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
 </body>
 </html>

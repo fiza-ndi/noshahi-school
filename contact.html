@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
-    <link rel="stylesheet" href="style7.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- ====== HEADER SECTION ====== -->
@@ -24,10 +28,10 @@
 
 <header class="navbar">
   <div class="logo">
-    <img src="noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi School System">
+    <img src="image/noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi School System">
     <div>
-      <div style="font-weight:700; color:#0d4a4a;">Noshahi School System</div>
-        <div style="font-size:12px; color:#555;">Inspiring global minds</div>
+      <div class="logo-title">Noshahi School System</div>
+      <div class="logo-subtitle">Inspiring global minds</div>
     </div>
   </div>
 
@@ -35,19 +39,30 @@
     <button class="burger" id="burger" aria-label="menu"><i class="fa-solid fa-bars"></i></button>
     <div class="nav-links" id="navLinks">
        <a href="index.html">Home</a>
-        <a href="why noshahi.html">Why-NSS</a>
+        <a href="why noshahi.html">Why-noshahi</a>
         <a href="campus.html">Campuses</a>
         <a href="admission.html">Admissions</a>
         <a href="journy.html">Our Journey</a>
         <a href="faculty.html">Faculty</a>
-        <a href="contact.html"class="active">Contact Us</a>
-         <a class="cta-btn" href="admission.html">Apply Now</a>
+        <a href="contact.html" class="active">Contact Us</a>
+        <a class="cta-btn" href="admission.html">Apply Now</a>
     </div>
   </nav>
 </header>
 
 
- <!-- CONTACT FORM & INFO -->
+  <!-- ===== CONTACT HERO ===== -->
+  <section class="contact-hero">
+    <div class="contact-hero-content">
+      <div class="hero-icon">
+        <i class="fas fa-envelope"></i>
+      </div>
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you! Whether you have questions about admissions, programs, or just want to learn more about Noshahi School System, our team is here to help.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM & INFO -->
   <section class="contact-container">
     <div class="contact-form">
       <h2>Get in Touch</h2>
@@ -59,30 +74,48 @@
         <button type="submit">Send Message</button>
       </form>
     </div>
+  </section>
 
-    <div class="contact-info">
-      <div class="info-section">
-        <h3>Our Contact Details</h3>
-        <div class="info-item">
-          <strong>📍 Address:</strong>
-          Noshahi School System, Main Road, Lahore, Pakistan
-        </div>
-        <div class="info-item">
-          <strong>📞 Phone:</strong>
-          +92 300 1234567
-        </div>
-        <div class="info-item">
-          <strong>✉️ Email:</strong>
-          info@noshahischool.edu.pk
-        </div>
-      </div>
 
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.509469226238!2d74.3524!3d31.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905d63e4b1bb5%3A0x9f0c2a92cdca82c9!2sLahore%20Pakistan!5e0!3m2!1sen!2s!4v0000000000000"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
+
+  <!-- =======================
+     📞 Contact Section
+======================== -->
+<section id="contact" class="contact-section">
+  <h2>📬 Get in Touch</h2>
+  <p class="contact-subtitle">We’d love to hear from you! Reach us anytime.</p>
+
+  <div class="contact-cards">
+    <div class="contact-card">
+      <div class="icon">📍</div>
+      <h3>Address</h3>
+      <p>Noshahi School System<br>Main Road, Lahore, Pakistan</p>
     </div>
+
+    <div class="contact-card">
+      <div class="icon">📞</div>
+      <h3>Phone</h3>
+      <p>+92 300 1234567</p>
+    </div>
+
+    <div class="contact-card">
+      <div class="icon">✉️</div>
+      <h3>Email</h3>
+      <p>info@noshahischool.edu.pk</p>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+
+
+  <!-- MAP SECTION -->
+  <section class="contact-map-section">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.509469226238!2d74.3524!3d31.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905d63e4b1bb5%3A0x9f0c2a92cdca82c9!2sLahore%20Pakistan!5e0!3m2!1sen!2s!4v0000000000000"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
   </section>
 
   <!-- MULTIPLE BRANCHES -->
@@ -123,9 +156,9 @@
     
     <!-- Left Column -->
     <div class="footer-about">
-      <img src="logo.png" alt="Noshahi Global Learning Hub Logo" class="footer-logo">
+      <img src="image/noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi School System  Logo" class="footer-logo">
       <p>
-        Noshahi Global Learning Hub is committed to academic excellence, strong values, 
+        Noshahi School System is committed to academic excellence, strong values, 
         and holistic development — nurturing future-ready, confident learners in a 
         progressive environment.
       </p>
@@ -143,9 +176,9 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="why noshahi.html">Why Noshahi</a></li>
-        <li><a href="#programs">Programs</a></li>
-        <li><a href="#admissions">Admissions</a></li>
-        <li><a href="#contact">Enroll Now</a></li>
+        <li><a href="faculty.html">Programs</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="contact.html">Enroll Now</a></li>
       </ul>
     </div>
 
@@ -164,101 +197,53 @@
 
   <hr>
   <p class="footer-copy">Copyright © 2025 
-    <span class="brand">Noshahi Global Learning Hub</span>. All Rights Reserved.
+    <span class="brand">Noshahi School System</span>. All Rights Reserved.
     <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="back-top">↑ Top</button>
   </p>
 </footer>
 
 
 <script>
-  // ===================== MOBILE MENU TOGGLE =====================
+  // ===== Mobile menu toggle =====
   const burger = document.getElementById('burger');
-  const navMenu = document.getElementById('navLinks'); // renamed to navMenu to avoid conflict
-
+  const navLinks = document.getElementById('navLinks');
   burger.addEventListener('click', () => {
-    navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
   });
 
-
-  // ===================== SIMPLE CAROUSEL =====================
-  const slides = document.getElementById('slides');
-  const dots = document.getElementById('dots');
-  const total = slides.children.length;
-  let index = 0;
-
-  function goTo(i) {
-    index = (i + total) % total;
-    slides.style.transform = `translateX(${-index * 100}%)`;
-    Array.from(dots.children).forEach((d, idx) => d.classList.toggle('active', idx === index));
-  }
-
-  // create dots
-  for (let i = 0; i < total; i++) {
-    const d = document.createElement('div');
-    d.className = 'dot';
-    d.addEventListener('click', () => goTo(i));
-    dots.appendChild(d);
-  }
-  goTo(0);
-
-  document.getElementById('prev').addEventListener('click', () => goTo(index - 1));
-  document.getElementById('next').addEventListener('click', () => goTo(index + 1));
-
-  // autoplay
-  setInterval(() => goTo(index + 1), 7000);
-
-
-  // ===================== ACE PROMISE SECTION EFFECTS =====================
-  document.addEventListener("DOMContentLoaded", () => {
-    const aceCards = document.querySelectorAll("#ace .card");
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    }, { threshold: 0.3 });
-    aceCards.forEach((card) => observer.observe(card));
-  });
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const whyCards = document.querySelectorAll("#why .card");
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) entry.target.classList.add("visible");
-      });
-    }, { threshold: 0.3 });
-    whyCards.forEach((card) => observer.observe(card));
-  });
-
-  document.querySelectorAll("#values .card").forEach(card => {
-    card.addEventListener("mouseenter", () => {
-      card.classList.add("active");
-    });
-    card.addEventListener("mouseleave", () => {
-      card.classList.remove("active");
-    });
-  });
-
-
-  // ===================== FOOTER YEAR =====================
+  // ===== Footer year auto update =====
   document.getElementById('year').textContent = new Date().getFullYear();
-
-
-
 </script>
+<script>
+  const animatedElements = document.querySelectorAll("[data-animate]");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.2 });
 
+  animatedElements.forEach(el => observer.observe(el));
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
 
+    // Toggle menu open/close on burger click
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
 
-<!-- ✅ WhatsApp Floating Button -->
-<a href="https://wa.me/923001234567" 
-   class="whatsapp-float" 
-   target="_blank" 
-   aria-label="Chat on WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
-
-
+    // Close menu automatically when a nav link is clicked (on mobile)
+    document.querySelectorAll('#navLinks a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  });
+</script>
 
 </body>
 </html>

@@ -3,126 +3,47 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Noshahi School System — Home</title>
-  
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="style.css">
 
-  <style>
-    :root{--brand:#ffae00;--dark:#ffffff;--muted:#6b7280}
-    *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;color:#ffffff;margin:0}
-
-    /* Top contact bar */
-    .topbar{background:#0d4a4a;color:#fff;padding:6px 16px;font-size:14px;display:flex;justify-content:space-between;align-items:center}
-    .topbar .left, .topbar .right{display:flex;gap:12px;align-items:center}
-    .topbar a{color:inherit;text-decoration:none}
-
-    /* Navbar */
-    .navbar{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:#fff;border-bottom:1px solid #eee}
-    .logo{display:flex;align-items:center;gap:12px}
-    .logo img{height:48px}
-    .nav-links{display:flex;gap:18px;align-items:center}
-    .nav-links a{color:#0d4a4a;text-decoration:none;font-weight:600}
-    .cta-btn{background:var(--brand);color:#fff;padding:8px 14px;border-radius:8px;text-decoration:none}
-
-    /* Social icons */
-    .social{display:flex;gap:8px}
-    .social a{color:var(--dark);text-decoration:none}
-
-
-    .split-text li{
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #000000;
-}
-
-.social-section h4 {
-    color: #fcb900;
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-}
-
-    /* Mobile */
-    .burger{display:none;border:0;background:transparent;font-size:20px}
-    @media (max-width:900px){
-      .nav-links{display:none;position:absolute;top:78px;left:0;right:0;background:#fff;flex-direction:column;padding:16px;border-top:1px solid #eee}
-      .burger{display:block}
-      .logo img{height:40px}
-    }
-
-    /* Hero carousel full width */
-    .hero{position:relative;overflow:hidden}
-    .slides{display:flex;transition:transform 0.6s ease}
-    .slide{min-width:100%;height:60vh;display:flex;align-items:center;justify-content:center;color:#fff;position:relative;background-size:cover;background-position:center}
-    .slide .overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(6,10,23,0.25), rgba(6,10,23,0.6));}
-    .slide .copy{position:relative;z-index:2;max-width:1100px;padding:24px}
-    .slide h1{font-size:clamp(24px,4vw,48px);margin:0 0 10px}
-    .slide p{font-size:clamp(14px,1.8vw,18px);margin:0 0 16px;color:#eef}
-    .hero-controls{position:absolute;left:16px;right:16px;bottom:18px;display:flex;justify-content:space-between;z-index:5}
-    .dots{display:flex;gap:8px}
-    .dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.5);cursor:pointer}
-    .dot.active{background:#fff}
-    .hero-nav{display:flex;gap:8px}
-    .hero-btn{background:rgba(0,0,0,0.35);border:0;color:#fff;padding:8px 12px;border-radius:8px}
-
-    /* Sections */
-    .container{max-width:1200px;margin:0 auto;padding:40px 20px}
-    .grid{display:grid;gap:20px}
-    .grid-3{grid-template-columns:repeat(3,1fr)}
-    .program-card{border:1px solid #eeeeee;padding:20px;border-radius:12px}
-
-
-
-
-
-    /* Contact form */
-    form{display:grid;gap:12px}
-    input,textarea,select{padding:10px;border-radius:8px;border:1px solid #ddd}
-    button[type=submit]{background:var(--brand);color:#fff;padding:10px;border-radius:8px;border:0}
-
-    /* Footer */
-    footer{background:#0a3d3f;color:#fff;padding:32px 20px}
-    footer a{color:inherit}
-
-  </style>
+  <!-- All styles moved to main.css -->
 </head>
 <body>
 
-  <div class="topbar">
-    <div class="left"><span><i class="fa-solid fa-phone"></i> 03 111 444 412</span><a href="noshahidevelopersinc@gmail.com"><i class="fa-solid fa-envelope"></i> info@noshahi.edu.pk</a></div>
+    <div class="topbar">
+    <div class="left"><span><i class="fa-solid fa-phone"></i> 03 111 444 412</span><a href="mailto:info@noshahi.edu.pk"><i class="fa-solid fa-envelope"></i> info@noshahi.edu.pk</a></div>
     <div class="right social"><a href="#" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="linkedin"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" aria-label="youtube"><i class="fa-brands fa-youtube"></i></a></div>
   </div>
 
   <header class="navbar">
     <div class="logo">
-      <img src="noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi School System">
+      <img src="image/noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi School System">
       <div>
-        <div style="font-weight:700; color:#0d4a4a;">Noshahi School System</div>
-        <div style="font-size:12px; color:#555;">Inspiring global minds</div>
+        <div class="logo-title">Noshahi School System</div>
+        <div class="logo-subtitle">Inspiring global minds</div>
       </div>
     </div>
 
     <nav>
-  <button class="burger" id="burger" aria-label="menu">
-    <i class="fa-solid fa-bars"></i>
-  </button>
-  <div class="nav-links" id="navLinks">
-    <a href="index.html" class="active">Home</a>
-    <a href="why noshahi.html">Why-NSS</a>
-    <a href="campus.html">Campuses</a>
-    <a href="admission.html">Admissions</a>
-    <a href="journy.html">Our Journey</a>
-    <a href="faculty.html">Faculty</a>
-    <a href="contact.html">Contact Us</a>
-    <a class="cta-btn" href="admission.html">Apply Now</a>
-  </div>
-</nav>
+      <button class="burger" id="burger" aria-label="menu"><i class="fa-solid fa-bars"></i></button>
+      <div class="nav-links" id="navLinks">
+         <a href="index.html" class="active">Home</a>
+        <a href="why noshahi.html">Why-noshahi</a>
+        <a href="campus.html">Campuses</a>
+        <a href="admission.html">Admissions</a>
+        <a href="journy.html">Our Journey</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="contact.html">Contact Us</a>
+        <a class="cta-btn" href="admission.html">Apply Now</a>
+      </div>
+    </nav>
   </header>
-
 
   <!-- HERO / CAROUSEL -->
   <section class="hero">
@@ -130,7 +51,7 @@
       <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop&s=000')">
         <div class="overlay"></div>
         <div class="copy">
-          <h1>Welcome to Noshahi School System</h1>
+          <h1>Welcome to Noshahi Global Learning Hub</h1>
           <p>Empowering students with modern education, values, and global opportunities.</p>
           <a class="cta-btn" href="admission.html">Join Our Next Intake</a>
         </div>
@@ -163,174 +84,53 @@
       </div>
     </div>
   </section>
-<br>
-
-<!-- ABOUT -->
-<section id="about" class="split-section about-section">
-  <div class="split-text">
-    <h2>About Us</h2>
-    <p>
-      Noshahi Global Learning Hub (NGLH) is a modern school providing high-quality education 
-      from early years to higher secondary. We focus on holistic development, academic excellence, 
-      and character-building to prepare our students for a successful future.
-    </p>
-  </div>
-
-  <div class="split-img">
-    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000" alt="About Noshahi">
-  </div>
-</section>
 
 
+<!-- INFO CARDS SECTION -->
+<section class="info-section">
+  <h2 class="section-title">Our Key Highlights</h2>
+  <div class="cards-container">
+    
+    <div class="info-card">
+      <img src="image/Spiritual Well-being.jpg" alt="Modern Learning">
+      <h3>Modern Learning</h3>
+      <p>We use smart classrooms, interactive boards, and digital tools to make learning fun and engaging.</p>
+    </div>
 
+    <div class="info-card">
+      <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800" alt="Skilled Teachers">
+      <h3>Skilled Teachers</h3>
+      <p>Our professional and experienced staff ensures quality education with personal guidance.</p>
+    </div>
 
+    <div class="info-card">
+      <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=800" alt="Global Standards">
+      <h3>Global Standards</h3>
+      <p>We focus on 21st-century skills — creativity, communication, and critical thinking.</p>
+    </div>
 
-
-
-<!-- PROGRAMS -->
-<section id="programs" class="split-section reverse light-bg reverse">
-
-  <div class="split-img">
-    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000" alt="Programs">
-  </div>
-  <div class="split-text">
-    <h2>Programs</h2>
-    <p>
-      From Primary to O-Levels — Noshahi School System offers innovative, 
-      student-centered learning designed to build critical thinking, creativity, 
-      and confidence for lifelong success.
-    </p>
-  </div>
-
-</section>
-
-<!-- CAMPUSES -->
-<section id="campuses" class="split-section reverse">
-  <div class="split-text">
-    <h2>Our Campuses</h2>
-    <h4>Across the City:</h4>
-    <ul>
-      <li>State-of-the-art classrooms designed for interactive learning</li>
-      <li>Fully equipped science and computer labs</li>
-      <li>Modern libraries and reading zones for curious minds</li>
-      <li>Playgrounds and sports areas to promote physical development</li>
-      <li>Safe, clean, and welcoming environment for all students</li>
-    </ul>
-  </div>
-
-  <div class="split-img">
-    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1000" alt="Campus">
   </div>
 </section>
 
 
-<!-- ADMISSIONS -->
-<section id="admission" class="split-section light-bg reverse">
+ <!-- 💡 ABOUT SECTION -->
+  <section id="about" class="about-section">
+    <div class="about-content">
+      <h1>Welcome to Noshahi School System</h1>
+      <p>We nurture confident learners who think critically, communicate effectively, and lead with compassion. Our mission is to blend academic excellence with moral values and creativity.</p>
+      <a href="why noshahi.html" class="cta-btn">Explore Our Programs</a>
+    </div>
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1000" alt="About Noshahi">
+    </div>
+  </section>
 
-  <div class="split-img">
-    <img src="admission.jpg" alt="Programs">
-  </div>
-  <div class="split-text">
-    <h2>Admissions</h2>
-    <p>
-      Admissions for the new session are open. Contact us to learn more about our admission criteria, scholarships, and academic calendar.
-    </p>
-  </div>
-
-</section>
-
-
-
-<!-- INTELLECTUAL WELL-BEING -->
-<section id="intellectual" class="split-section reverse intellectual-section">
-  <div class="split-text">
-    <h2>Intellectual Well-being</h2>
-    <h4>In Action:</h4>
-    <ul>
-      <li>Encouraging inquiry-based learning and critical thinking</li>
-      <li>STEM-focused activities to enhance creativity and innovation</li>
-      <li>Reading programs that develop comprehension and curiosity</li>
-    </ul>
-  </div>
-
-  <div class="split-img">
-    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1000" alt="Intellectual Well-being">
-  </div>
-</section>
-
-<!-- EMOTIONAL WELL-BEING -->
-<section id="emotional" class="split-section emotional-section">
-  <div class="split-text">
-    <h2>Emotional Well-being</h2>
-    <h4>In Action:</h4>
-    <ul>
-      <li>Creating a supportive environment that encourages emotional expression</li>
-      <li>Guidance sessions to help students manage stress and build resilience</li>
-      <li>Peer mentoring and friendship programs fostering empathy and confidence</li>
-    </ul>
-  </div>
-
-  <div class="split-img">
-    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000" alt="Emotional Well-being">
-  </div>
-</section>
-
-<!-- SOCIAL WELL-BEING -->
-<section id="social" class="split-section social-section">
-  <div class="split-text">
-    <h2>Social Well-being</h2>
-    <h4>In Action:</h4>
-    <ul>
-      <li>Encouraging teamwork through group projects and co-curricular activities</li>
-      <li>Promoting respect, kindness, and cooperation among students</li>
-      <li>Organizing cultural, sports, and community events for social connection</li>
-    </ul>
-  </div>
-
-  <div class="split-img">
-    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1000" alt="Social Well-being">
-  </div>
-</section>
-
-<!-- PHYSICAL WELL-BEING -->
-<section id="physical" class="split-section physical-section">
-  <div class="split-text">
-    <h2>Physical Well-being</h2>
-    <h4>In Action:</h4>
-    <ul>
-      <li>Comprehensive physical education program promoting fitness and health</li>
-      <li>Regular sports activities and inter-school competitions to build teamwork</li>
-      <li>Health awareness sessions and workshops on nutrition and hygiene</li>
-    </ul>
-  </div>
-
-  <div class="split-img">
-    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1000" alt="Physical Well-being">
-  </div>
-</section>
-
-<!-- DIGITAL WELL-BEING -->
-<section id="digital" class="split-section digital-section">
-  <div class="split-text">
-    <h2>Digital Well-being</h2>
-    <h4>In Action:</h4>
-    <ul>
-      <li>Teaching responsible use of technology and online safety practices</li>
-      <li>Encouraging balanced screen time and mindful digital habits</li>
-      <li>Integrating digital literacy into everyday learning activities</li>
-    </ul>
-  </div>
-
-  <div class="split-img">
-    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1000" alt="Digital Well-being">
-  </div>
-</section>
 
 
 <!-- ACE Promise -->
 <section id="ace" class="ace">
   <h2>The ACE Promise</h2>
-  <p style="color:var(--muted);margin-top:0.25rem">Our Promise — The ACE Framework</p>
+  <p class="ace-subtitle">Our Promise — The ACE Framework</p>
 
   <div class="ace-grid" style="margin-top:1rem">
     <div class="card">
@@ -358,22 +158,22 @@
 <!-- Why choose / Features -->
 <section id="why" class="features">
 <h2>Why Choose Noshahi School System?</h2>
-<p style="color:var(--muted);margin-top:0.25rem">Reasons to believe — short highlights</p>
-<div class="features-grid" style="margin-top:1rem">
+<p class="section-subtitle">Reasons to believe — short highlights</p>
+<div class="features-grid">
 <div class="card">
 <h3>Academic Excellence</h3>
 <p>Rigorous curriculum with personalised support to help every child reach their potential.</p>
-<p><a href="#programs">Read more →</a></p>
+<p><a href="why noshahi.html">Read more →</a></p>
 </div>
 <div class="card">
 <h3>Co-curricular & Extracurricular</h3>
 <p>Clubs, arts, debate and activities that build skills beyond the classroom.</p>
-<p><a href="#activities">Read more →</a></p>
+<p><a href="index.htmly">Read more →</a></p>
 </div>
 <div class="card">
 <h3>Sports & Physical Fitness</h3>
 <p>Robust sports program and PE to promote healthy lifestyles and team spirit.</p>
-<p><a href="#sports">Read more →</a></p>
+<p><a href="why noshahi.html">Read more →</a></p>
 </div>
 </div>
 </section>
@@ -443,14 +243,14 @@
 <!-- Dual Image Section -->
 <section class="dual-image-section">
   <div class="dual-img left-img">
-    <img src="secondary.jpg" alt="Secondary Section">
+    <img src="image/secondary.jpg" alt="Secondary Section">
     <div class="img-overlay">
       <h3>Secondary Section</h3>
     </div>
   </div>
 
   <div class="dual-img right-img">
-    <img src="early year.jpg" alt="Early Years">
+    <img src="image/early year.jpg" alt="Early Years">
     <div class="img-overlay">
       <h3>Early Years</h3>
     </div>
@@ -468,7 +268,7 @@
     
     <!-- Left Column -->
     <div class="footer-about">
-      <img src="noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi School System" class="footer-logo">
+      <img src="image/noshahi_school_system_Logo-removebg-preview.png" alt="Noshahi School System" class="footer-logo">
       <p>
         Noshahi School System is committed to academic excellence, strong values, 
         and holistic development — nurturing future-ready, confident learners in a 
@@ -487,8 +287,8 @@
       <h3>Quick Links</h3>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="campus.html">About Us</a></li>
-        <li><a href="why noshahi.html">Programs</a></li>
+        <li><a href="why noshahi.html">Why Noshahi</a></li>
+        <li><a href="faculty.html">Programs</a></li>
         <li><a href="admission.html">Admissions</a></li>
         <li><a href="contact.html">Enroll Now</a></li>
       </ul>
@@ -508,102 +308,117 @@
   </div>
 
   <hr>
-<p class="footer-copy">
-  Copyright © <span id="year"></span>
-  <span class="brand">Noshahi School System</span>. All Rights Reserved.
-  <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="back-top">↑ Top</button>
-</p>
+  <p class="footer-copy">Copyright © 2025 
+    <span class="brand">Noshahi School System</span>. All Rights Reserved.
+    <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="back-top">↑ Top</button>
+  </p>
 </footer>
 
 
 
 
-<script>
-  // ===================== MOBILE MENU TOGGLE =====================
-  const burger = document.getElementById('burger');
-  const navMenu = document.getElementById('navLinks'); // renamed to navMenu to avoid conflict
+  <script>
+    // Mobile menu toggle
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+    burger.addEventListener('click', ()=>{
+      navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    });
 
-  burger.addEventListener('click', () => {
-    navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
-  });
+    // Simple carousel
+    const slides = document.getElementById('slides');
+    const dots = document.getElementById('dots');
+    const total = slides.children.length;
+    let index = 0;
 
+    function goTo(i){
+      index = (i + total) % total;
+      slides.style.transform = `translateX(${-index * 100}%)`;
+      Array.from(dots.children).forEach((d,idx)=> d.classList.toggle('active', idx===index));
+    }
 
-  // ===================== SIMPLE CAROUSEL =====================
-  const slides = document.getElementById('slides');
-  const dots = document.getElementById('dots');
-  const total = slides.children.length;
-  let index = 0;
+    // create dots
+    for(let i=0;i<total;i++){const d=document.createElement('div');d.className='dot';d.addEventListener('click',()=>goTo(i));dots.appendChild(d)}
+    goTo(0);
 
-  function goTo(i) {
-    index = (i + total) % total;
-    slides.style.transform = `translateX(${-index * 100}%)`;
-    Array.from(dots.children).forEach((d, idx) => d.classList.toggle('active', idx === index));
-  }
+    document.getElementById('prev').addEventListener('click',()=>goTo(index-1));
+    document.getElementById('next').addEventListener('click',()=>goTo(index+1));
 
-  // create dots
-  for (let i = 0; i < total; i++) {
-    const d = document.createElement('div');
-    d.className = 'dot';
-    d.addEventListener('click', () => goTo(i));
-    dots.appendChild(d);
-  }
-  goTo(0);
+    // autoplay
+    setInterval(()=>goTo(index+1),7000);
 
-  document.getElementById('prev').addEventListener('click', () => goTo(index - 1));
-  document.getElementById('next').addEventListener('click', () => goTo(index + 1));
+       // ===== ACE PROMISE SECTION EFFECTS ===== //
 
-  // autoplay
-  setInterval(() => goTo(index + 1), 7000);
+// simple fade-in animation when cards appear in viewport
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll("#ace .card");
 
-
-  // ===================== ACE PROMISE SECTION EFFECTS =====================
-  document.addEventListener("DOMContentLoaded", () => {
-    const aceCards = document.querySelectorAll("#ace .card");
-    const observer = new IntersectionObserver((entries) => {
+  const observer = new IntersectionObserver(
+    (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
         }
       });
-    }, { threshold: 0.3 });
-    aceCards.forEach((card) => observer.observe(card));
-  });
+    }, // <-- yahan comma hona chahiye tha!
+    { threshold: 0.3 }
+  );
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const whyCards = document.querySelectorAll("#why .card");
-    const observer = new IntersectionObserver((entries) => {
+  cards.forEach((card) => {
+    observer.observe(card);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll("#why .card");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) entry.target.classList.add("visible");
       });
-    }, { threshold: 0.3 });
-    whyCards.forEach((card) => observer.observe(card));
+    },
+    { threshold: 0.3 }
+  );
+
+  cards.forEach((card) => observer.observe(card));
+});
+
+document.querySelectorAll("#values .card").forEach(card => {
+  card.addEventListener("mouseenter", () => {
+    card.classList.add("active");
   });
+  card.addEventListener("mouseleave", () => {
+    card.classList.remove("active");
+  });
+});
 
-  document.querySelectorAll("#values .card").forEach(card => {
-    card.addEventListener("mouseenter", () => {
-      card.classList.add("active");
+
+
+
+
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+
+    // Toggle menu open/close on burger click
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
     });
-    card.addEventListener("mouseleave", () => {
-      card.classList.remove("active");
+
+    // Close menu automatically when a nav link is clicked (on mobile)
+    document.querySelectorAll('#navLinks a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
     });
   });
-
-
-  // ===================== FOOTER YEAR =====================
-  document.getElementById('year').textContent = new Date().getFullYear();
 </script>
-
-
-
-<!-- ✅ WhatsApp Floating Button -->
-<a href="https://wa.me/923001234567" 
-   class="whatsapp-float" 
-   target="_blank" 
-   aria-label="Chat on WhatsApp">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
-
-
 
 </body>
 </html>
